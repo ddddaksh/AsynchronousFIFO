@@ -1,0 +1,261 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000023182a5cbf0 .scope module, "tb_readpointerhandler" "tb_readpointerhandler" 2 2;
+ .timescale 0 0;
+P_0000023182a3c850 .param/l "PTRWIDTH" 0 2 5, +C4<00000000000000000000000000000011>;
+v0000023182ab4d80_0 .net "b_rd_ptr", 3 0, v0000023182a5af20_0;  1 drivers
+v0000023182ab4920_0 .net "empty", 0 0, v0000023182a5a8e0_0;  1 drivers
+v0000023182ab4f60_0 .net "g_rd_ptr", 3 0, v0000023182a5a0c0_0;  1 drivers
+v0000023182ab5280_0 .var "g_wptr_sync", 3 0;
+v0000023182ab38e0_0 .var "r_en", 0 0;
+v0000023182ab44c0_0 .var "rdclk", 0 0;
+v0000023182ab4a60_0 .var "read_reset_n", 0 0;
+S_0000023182a5cd80 .scope module, "uut" "readpointerhandler" 2 17, 3 2 0, S_0000023182a5cbf0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 4 "b_rd_ptr";
+    .port_info 1 /OUTPUT 4 "g_rd_ptr";
+    .port_info 2 /INPUT 4 "g_wptr_sync";
+    .port_info 3 /INPUT 1 "read_reset_n";
+    .port_info 4 /OUTPUT 1 "empty";
+    .port_info 5 /INPUT 1 "rdclk";
+    .port_info 6 /INPUT 1 "r_en";
+P_0000023182a3cc90 .param/l "PTRWIDTH" 0 3 2, +C4<00000000000000000000000000000011>;
+L_0000023182a3e8a0 .functor AND 4, L_0000023182ab3fc0, L_0000023182ab55a0, C4<1111>, C4<1111>;
+v0000023182a5a980_0 .net *"_ivl_0", 3 0, L_0000023182ab3fc0;  1 drivers
+v0000023182a5a840_0 .net *"_ivl_10", 3 0, L_0000023182a3e8a0;  1 drivers
+L_0000023182ba0088 .functor BUFT 1, C4<000>, C4<0>, C4<0>, C4<0>;
+v0000023182a5ac00_0 .net *"_ivl_3", 2 0, L_0000023182ba0088;  1 drivers
+v0000023182a5ad40_0 .net *"_ivl_5", 0 0, L_0000023182ab4c40;  1 drivers
+v0000023182a5ae80_0 .net *"_ivl_6", 3 0, L_0000023182ab55a0;  1 drivers
+L_0000023182ba00d0 .functor BUFT 1, C4<000>, C4<0>, C4<0>, C4<0>;
+v0000023182a5a7a0_0 .net *"_ivl_9", 2 0, L_0000023182ba00d0;  1 drivers
+v0000023182a5af20_0 .var "b_rd_ptr", 3 0;
+v0000023182a5a200_0 .net "b_rd_ptr_next", 3 0, L_0000023182ab42e0;  1 drivers
+v0000023182a5ade0_0 .net "binary", 3 0, L_0000023182ab5140;  1 drivers
+v0000023182a5a8e0_0 .var "empty", 0 0;
+v0000023182a5a0c0_0 .var "g_rd_ptr", 3 0;
+v0000023182a5a020_0 .net "g_wptr_sync", 3 0, v0000023182ab5280_0;  1 drivers
+v0000023182a5a160_0 .net "r_en", 0 0, v0000023182ab38e0_0;  1 drivers
+v0000023182ab3e80_0 .net "rdclk", 0 0, v0000023182ab44c0_0;  1 drivers
+v0000023182ab49c0_0 .net "read_reset_n", 0 0, v0000023182ab4a60_0;  1 drivers
+E_0000023182a3bdd0/0 .event negedge, v0000023182ab49c0_0;
+E_0000023182a3bdd0/1 .event posedge, v0000023182ab3e80_0;
+E_0000023182a3bdd0 .event/or E_0000023182a3bdd0/0, E_0000023182a3bdd0/1;
+L_0000023182ab3fc0 .concat [ 1 3 0 0], v0000023182ab38e0_0, L_0000023182ba0088;
+L_0000023182ab4c40 .reduce/nor v0000023182a5a8e0_0;
+L_0000023182ab55a0 .concat [ 1 3 0 0], L_0000023182ab4c40, L_0000023182ba00d0;
+L_0000023182ab42e0 .arith/sum 4, v0000023182a5af20_0, L_0000023182a3e8a0;
+S_0000023182a49da0 .scope module, "uut" "g2bconverter2" 3 30, 4 1 0, S_0000023182a5cd80;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 4 "data_out";
+    .port_info 1 /INPUT 4 "data_in";
+P_0000023182a3c490 .param/l "width" 0 4 1, +C4<000000000000000000000000000000100>;
+v0000023182a5aac0_0 .net *"_ivl_16", 0 0, L_0000023182ab46a0;  1 drivers
+v0000023182a5a2a0_0 .net "data_in", 3 0, v0000023182ab5280_0;  alias, 1 drivers
+v0000023182a5a340_0 .net "data_out", 3 0, L_0000023182ab5140;  alias, 1 drivers
+L_0000023182ab3d40 .part L_0000023182ab5140, 3, 1;
+L_0000023182ab5320 .part v0000023182ab5280_0, 2, 1;
+L_0000023182ab5500 .part L_0000023182ab5140, 2, 1;
+L_0000023182ab5000 .part v0000023182ab5280_0, 1, 1;
+L_0000023182ab50a0 .part L_0000023182ab5140, 1, 1;
+L_0000023182ab3840 .part v0000023182ab5280_0, 0, 1;
+L_0000023182ab5140 .concat8 [ 1 1 1 1], L_0000023182a3e910, L_0000023182a3e210, L_0000023182a3e520, L_0000023182ab46a0;
+L_0000023182ab46a0 .part v0000023182ab5280_0, 3, 1;
+S_0000023182a49f30 .scope generate, "genblk1[0]" "genblk1[0]" 4 5, 4 5 0, S_0000023182a49da0;
+ .timescale 0 0;
+P_0000023182a3c690 .param/l "i" 0 4 5, +C4<00>;
+L_0000023182a3e910 .functor XOR 1, L_0000023182ab50a0, L_0000023182ab3840, C4<0>, C4<0>;
+v0000023182a5a3e0_0 .net *"_ivl_0", 0 0, L_0000023182ab50a0;  1 drivers
+v0000023182a5aa20_0 .net *"_ivl_1", 0 0, L_0000023182ab3840;  1 drivers
+v0000023182a5a520_0 .net *"_ivl_2", 0 0, L_0000023182a3e910;  1 drivers
+S_0000023182a44260 .scope generate, "genblk1[1]" "genblk1[1]" 4 5, 4 5 0, S_0000023182a49da0;
+ .timescale 0 0;
+P_0000023182a3c890 .param/l "i" 0 4 5, +C4<01>;
+L_0000023182a3e210 .functor XOR 1, L_0000023182ab5500, L_0000023182ab5000, C4<0>, C4<0>;
+v0000023182a5a5c0_0 .net *"_ivl_0", 0 0, L_0000023182ab5500;  1 drivers
+v0000023182a5ab60_0 .net *"_ivl_1", 0 0, L_0000023182ab5000;  1 drivers
+v0000023182a5a660_0 .net *"_ivl_2", 0 0, L_0000023182a3e210;  1 drivers
+S_0000023182a443f0 .scope generate, "genblk1[2]" "genblk1[2]" 4 5, 4 5 0, S_0000023182a49da0;
+ .timescale 0 0;
+P_0000023182a3c550 .param/l "i" 0 4 5, +C4<010>;
+L_0000023182a3e520 .functor XOR 1, L_0000023182ab3d40, L_0000023182ab5320, C4<0>, C4<0>;
+v0000023182a5a700_0 .net *"_ivl_0", 0 0, L_0000023182ab3d40;  1 drivers
+v0000023182a5a480_0 .net *"_ivl_1", 0 0, L_0000023182ab5320;  1 drivers
+v0000023182a5aca0_0 .net *"_ivl_2", 0 0, L_0000023182a3e520;  1 drivers
+    .scope S_0000023182a5cd80;
+T_0 ;
+    %wait E_0000023182a3bdd0;
+    %load/vec4 v0000023182ab49c0_0;
+    %pad/u 32;
+    %cmpi/e 0, 0, 32;
+    %jmp/0xz  T_0.0, 4;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v0000023182a5af20_0, 0;
+    %pushi/vec4 0, 0, 4;
+    %assign/vec4 v0000023182a5a0c0_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0000023182a5a8e0_0;
+    %nor/r;
+    %load/vec4 v0000023182a5a160_0;
+    %and;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.2, 8;
+    %load/vec4 v0000023182a5a200_0;
+    %assign/vec4 v0000023182a5af20_0, 0;
+    %load/vec4 v0000023182a5a200_0;
+    %load/vec4 v0000023182a5a200_0;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %shiftr 4;
+    %xor;
+    %assign/vec4 v0000023182a5a0c0_0, 0;
+T_0.2 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0000023182a5cd80;
+T_1 ;
+    %wait E_0000023182a3bdd0;
+    %load/vec4 v0000023182ab49c0_0;
+    %pad/u 32;
+    %cmpi/e 0, 0, 32;
+    %jmp/0xz  T_1.0, 4;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0000023182a5a8e0_0, 0;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v0000023182a5af20_0;
+    %load/vec4 v0000023182a5ade0_0;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %assign/vec4 v0000023182a5a8e0_0, 0;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0000023182a5cbf0;
+T_2 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023182ab44c0_0, 0, 1;
+T_2.0 ;
+    %delay 5, 0;
+    %load/vec4 v0000023182ab44c0_0;
+    %inv;
+    %store/vec4 v0000023182ab44c0_0, 0, 1;
+    %jmp T_2.0;
+    %end;
+    .thread T_2;
+    .scope S_0000023182a5cbf0;
+T_3 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023182ab4a60_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023182ab38e0_0, 0, 1;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v0000023182ab5280_0, 0, 4;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000023182ab4a60_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 4;
+    %store/vec4 v0000023182ab5280_0, 0, 4;
+    %vpi_call 2 46 "$display", "Time: %0t - Writing 1st data, g_wptr_sync = %0d", $time, v0000023182ab5280_0 {0 0 0};
+    %delay 10, 0;
+    %pushi/vec4 2, 0, 4;
+    %store/vec4 v0000023182ab5280_0, 0, 4;
+    %vpi_call 2 49 "$display", "Time: %0t - Writing 2nd data, g_wptr_sync = %0d", $time, v0000023182ab5280_0 {0 0 0};
+    %delay 10, 0;
+    %pushi/vec4 3, 0, 4;
+    %store/vec4 v0000023182ab5280_0, 0, 4;
+    %vpi_call 2 52 "$display", "Time: %0t - Writing 3rd data, g_wptr_sync = %0d", $time, v0000023182ab5280_0 {0 0 0};
+    %delay 10, 0;
+    %pushi/vec4 4, 0, 4;
+    %store/vec4 v0000023182ab5280_0, 0, 4;
+    %vpi_call 2 55 "$display", "Time: %0t - Writing 4th data, g_wptr_sync = %0d", $time, v0000023182ab5280_0 {0 0 0};
+    %delay 10, 0;
+    %pushi/vec4 5, 0, 4;
+    %store/vec4 v0000023182ab5280_0, 0, 4;
+    %vpi_call 2 58 "$display", "Time: %0t - Writing 5th data, g_wptr_sync = %0d", $time, v0000023182ab5280_0 {0 0 0};
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000023182ab38e0_0, 0, 1;
+    %vpi_call 2 63 "$display", "Time: %0t - Reading 1st data, r_en = %0d", $time, v0000023182ab38e0_0 {0 0 0};
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023182ab38e0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000023182ab38e0_0, 0, 1;
+    %vpi_call 2 67 "$display", "Time: %0t - Reading 2nd data, r_en = %0d", $time, v0000023182ab38e0_0 {0 0 0};
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023182ab38e0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000023182ab38e0_0, 0, 1;
+    %vpi_call 2 71 "$display", "Time: %0t - Reading 3rd data, r_en = %0d", $time, v0000023182ab38e0_0 {0 0 0};
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023182ab38e0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000023182ab38e0_0, 0, 1;
+    %vpi_call 2 75 "$display", "Time: %0t - Reading 4th data, r_en = %0d", $time, v0000023182ab38e0_0 {0 0 0};
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023182ab38e0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000023182ab38e0_0, 0, 1;
+    %vpi_call 2 79 "$display", "Time: %0t - Reading 5th data, r_en = %0d", $time, v0000023182ab38e0_0 {0 0 0};
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023182ab38e0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 7, 0, 4;
+    %store/vec4 v0000023182ab5280_0, 0, 4;
+    %vpi_call 2 84 "$display", "Time: %0t - Simulating write, g_wptr_sync = %0d", $time, v0000023182ab5280_0 {0 0 0};
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000023182ab38e0_0, 0, 1;
+    %vpi_call 2 87 "$display", "Time: %0t - Attempting to read more, r_en = %0d", $time, v0000023182ab38e0_0 {0 0 0};
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023182ab38e0_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000023182ab4a60_0, 0, 1;
+    %vpi_call 2 92 "$display", "Time: %0t - Applying reset, read_reset_n = %0d", $time, v0000023182ab4a60_0 {0 0 0};
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000023182ab4a60_0, 0, 1;
+    %vpi_call 2 95 "$display", "Time: %0t - Releasing reset, read_reset_n = %0d", $time, v0000023182ab4a60_0 {0 0 0};
+    %delay 100, 0;
+    %vpi_call 2 98 "$finish" {0 0 0};
+    %end;
+    .thread T_3;
+    .scope S_0000023182a5cbf0;
+T_4 ;
+    %vpi_call 2 103 "$monitor", "Time: %0t, b_rd_ptr: %0d, g_rd_ptr: %0d, g_wptr_sync: %0d, empty: %0d, read_reset_n: %0d, r_en: %0d", $time, v0000023182ab4d80_0, v0000023182ab4f60_0, v0000023182ab5280_0, v0000023182ab4920_0, v0000023182ab4a60_0, v0000023182ab38e0_0 {0 0 0};
+    %end;
+    .thread T_4;
+    .scope S_0000023182a5cbf0;
+T_5 ;
+    %vpi_call 2 109 "$dumpfile", "readpointerhandler_tb.vcd" {0 0 0};
+    %vpi_call 2 110 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000023182a5cbf0 {0 0 0};
+    %end;
+    .thread T_5;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "tb_readpointerhanlder.v";
+    "./readpointerhandler.v";
+    "./g2bconverter2.v";

@@ -1,0 +1,85 @@
+$date
+	Sun Jul 14 15:37:55 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_g2bconverter $end
+$var wire 4 ! binary [3:0] $end
+$var parameter 32 " WIDTH $end
+$var reg 4 # gray [3:0] $end
+$scope module converter $end
+$var wire 4 $ data_in [3:0] $end
+$var wire 4 % data_out [3:0] $end
+$var parameter 32 & width $end
+$scope begin genblk1[0] $end
+$var parameter 2 ' i $end
+$upscope $end
+$scope begin genblk1[1] $end
+$var parameter 2 ( i $end
+$upscope $end
+$scope begin genblk1[2] $end
+$var parameter 3 ) i $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 )
+b1 (
+b0 '
+b100 &
+b100 "
+$end
+#0
+$dumpvars
+b0 %
+b0 $
+b0 #
+b0 !
+$end
+#10
+b1 !
+b1 %
+b1 #
+b1 $
+#20
+b1000 !
+b1000 %
+b1100 #
+b1100 $
+#30
+b10 !
+b10 %
+b11 #
+b11 $
+#40
+b11 !
+b11 %
+b10 #
+b10 $
+#50
+b100 !
+b100 %
+b110 #
+b110 $
+#60
+b101 !
+b101 %
+b111 #
+b111 $
+#70
+b110 !
+b110 %
+b101 #
+b101 $
+#80
+b111 !
+b111 %
+b100 #
+b100 $
+#90

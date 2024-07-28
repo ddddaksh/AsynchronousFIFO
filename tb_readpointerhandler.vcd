@@ -1,0 +1,256 @@
+$date
+	Mon Jul 15 12:13:39 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_readpointerhandler $end
+$var wire 4 ! g_rd_ptr [3:0] $end
+$var wire 1 " empty $end
+$var wire 4 # b_rd_ptr [3:0] $end
+$var parameter 32 $ PTRWIDTH $end
+$var reg 4 % g_wptr_sync [3:0] $end
+$var reg 1 & r_en $end
+$var reg 1 ' rdclk $end
+$var reg 1 ( read_reset_n $end
+$scope module uut $end
+$var wire 4 ) g_wptr_sync [3:0] $end
+$var wire 1 & r_en $end
+$var wire 1 ' rdclk $end
+$var wire 1 ( read_reset_n $end
+$var wire 4 * binary [3:0] $end
+$var wire 4 + b_rd_ptr_next [3:0] $end
+$var parameter 32 , PTRWIDTH $end
+$var reg 4 - b_rd_ptr [3:0] $end
+$var reg 1 " empty $end
+$var reg 4 . g_rd_ptr [3:0] $end
+$scope module uut $end
+$var wire 4 / data_in [3:0] $end
+$var wire 4 0 data_out [3:0] $end
+$var parameter 33 1 width $end
+$scope begin genblk1[0] $end
+$var parameter 2 2 i $end
+$upscope $end
+$scope begin genblk1[1] $end
+$var parameter 2 3 i $end
+$upscope $end
+$scope begin genblk1[2] $end
+$var parameter 3 4 i $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 4
+b1 3
+b0 2
+b100 1
+b11 ,
+b11 $
+$end
+#0
+$dumpvars
+b0 0
+b0 /
+b0 .
+b0 -
+b0 +
+b0 *
+b0 )
+0(
+0'
+0&
+b0 %
+b0 #
+0"
+b0 !
+$end
+#5
+1'
+#10
+0'
+1(
+#15
+1"
+1'
+#20
+b1111 *
+b1111 0
+0'
+b1000 %
+b1000 )
+b1000 /
+#25
+0"
+1'
+#30
+0'
+#35
+b1 +
+1&
+1'
+#36
+b0 +
+0&
+#40
+0'
+#45
+b1 +
+1&
+1'
+#46
+b0 +
+0&
+#50
+0'
+#55
+b1 +
+1&
+1'
+#56
+b0 +
+0&
+#60
+0'
+#65
+b1 +
+1&
+1'
+#66
+b0 +
+0&
+#70
+0'
+#75
+b1 +
+1&
+1'
+#76
+b0 +
+0&
+#80
+0'
+#85
+b1 +
+1&
+1'
+#86
+b0 +
+0&
+#90
+0'
+#95
+b1 +
+1&
+1'
+#96
+b0 +
+0&
+#100
+0'
+#105
+0(
+1'
+#110
+0'
+#115
+1(
+1'
+#120
+0'
+#125
+b1 +
+1&
+1'
+#126
+b0 +
+0&
+#130
+0'
+#135
+b1 +
+1&
+1'
+#136
+b0 +
+0&
+#140
+0'
+#145
+b1 +
+1&
+1'
+#146
+b0 +
+0&
+#150
+0'
+#155
+b1 +
+1&
+1'
+#156
+b0 +
+0&
+#160
+0'
+#165
+b1 +
+1&
+1'
+#166
+b0 +
+0&
+#170
+0'
+#175
+b1 +
+1&
+1'
+#176
+b0 +
+0&
+#180
+0'
+#185
+b1 +
+1&
+1'
+#186
+b0 +
+0&
+#190
+0'
+#195
+b1 +
+1&
+1'
+#196
+b0 +
+0&
+#200
+0'
+#205
+1'
+#210
+0'
+#215
+1'
+#220
+0'
+#225
+1'
+#230
+0'
+#235
+1'
+#240
+0'
+#245
+1'
+#246

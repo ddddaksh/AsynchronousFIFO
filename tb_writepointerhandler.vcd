@@ -1,0 +1,617 @@
+$date
+	Mon Jul 15 11:59:43 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_writepointerhandler $end
+$var wire 4 ! g_wrptr [3:0] $end
+$var wire 1 " full $end
+$var wire 4 # b_wrptr [3:0] $end
+$var parameter 32 $ PTRWIDTH $end
+$var reg 4 % g_rdptr_sync [3:0] $end
+$var reg 1 & w_en $end
+$var reg 1 ' wclk $end
+$var reg 1 ( wr_reset_n $end
+$scope module uut $end
+$var wire 4 ) g_rdptr_sync [3:0] $end
+$var wire 1 & w_en $end
+$var wire 1 ' wclk $end
+$var wire 1 ( wr_reset_n $end
+$var wire 4 * gray2 [3:0] $end
+$var wire 4 + gray [3:0] $end
+$var wire 4 , b_wrptr_next [3:0] $end
+$var parameter 32 - PTRWIDTH $end
+$var reg 4 . b_wrptr [3:0] $end
+$var reg 1 " full $end
+$var reg 4 / g_wrptr [3:0] $end
+$scope module uut $end
+$var wire 4 0 data_in [3:0] $end
+$var wire 4 1 data_out [3:0] $end
+$var parameter 33 2 width $end
+$scope begin genblk1[0] $end
+$var parameter 2 3 i $end
+$upscope $end
+$scope begin genblk1[1] $end
+$var parameter 2 4 i $end
+$upscope $end
+$scope begin genblk1[2] $end
+$var parameter 3 5 i $end
+$upscope $end
+$upscope $end
+$scope module uut2 $end
+$var wire 4 6 data_in [3:0] $end
+$var wire 4 7 data_out [3:0] $end
+$var parameter 33 8 width $end
+$scope begin genblk1[0] $end
+$var parameter 2 9 i $end
+$upscope $end
+$scope begin genblk1[1] $end
+$var parameter 2 : i $end
+$upscope $end
+$scope begin genblk1[2] $end
+$var parameter 3 ; i $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 ;
+b1 :
+b0 9
+b100 8
+b10 5
+b1 4
+b0 3
+b100 2
+b11 -
+b11 $
+$end
+#0
+$dumpvars
+b0 7
+b0 6
+b0 1
+b0 0
+b0 /
+b0 .
+b0 ,
+b0 +
+b0 *
+b0 )
+0(
+0'
+0&
+b0 %
+b0 #
+0"
+b0 !
+$end
+#5
+1'
+#10
+0'
+1(
+#15
+1'
+#20
+0'
+#25
+b1 ,
+1&
+1'
+#30
+0'
+#35
+b1 +
+b1 1
+b1 !
+b1 /
+b10 ,
+b1 #
+b1 .
+b1 0
+1'
+#40
+0'
+#45
+b11 +
+b11 1
+b11 !
+b11 /
+b11 ,
+b10 #
+b10 .
+b10 0
+1'
+#50
+0'
+#55
+b10 +
+b10 1
+b10 !
+b10 /
+b100 ,
+b11 #
+b11 .
+b11 0
+1'
+#60
+0'
+#65
+b111 +
+b111 1
+b110 !
+b110 /
+b101 ,
+b100 #
+b100 .
+b100 0
+1'
+#70
+0'
+#75
+b110 +
+b110 1
+b111 !
+b111 /
+b110 ,
+b101 #
+b101 .
+b101 0
+1'
+#80
+0'
+#85
+b100 +
+b100 1
+b101 !
+b101 /
+b111 ,
+b110 #
+b110 .
+b110 0
+1'
+#90
+0'
+#95
+b101 +
+b101 1
+b100 !
+b100 /
+b1000 ,
+b111 #
+b111 .
+b111 0
+1'
+#100
+0'
+#105
+b1111 +
+b1111 1
+b1100 !
+b1100 /
+b1001 ,
+b1000 #
+b1000 .
+b1000 0
+1'
+#110
+0'
+#115
+b1110 +
+b1110 1
+b1101 !
+b1101 /
+b1001 ,
+b1001 #
+b1001 .
+b1001 0
+1"
+1'
+#120
+0'
+#125
+b1010 ,
+0"
+1'
+#130
+0'
+#135
+b0 +
+b0 1
+b0 !
+b0 /
+b1 ,
+b0 #
+b0 .
+b0 0
+0(
+1'
+#140
+0'
+#145
+b0 ,
+0&
+1(
+1'
+#150
+0'
+#155
+b1 ,
+1&
+1'
+#160
+0'
+#165
+b1 +
+b1 1
+b1 !
+b1 /
+b10 ,
+b1 #
+b1 .
+b1 0
+1'
+#170
+0'
+#175
+b11 +
+b11 1
+b11 !
+b11 /
+b11 ,
+b10 #
+b10 .
+b10 0
+b1 *
+b1 7
+b1 %
+b1 )
+b1 6
+1'
+#180
+0'
+#185
+b10 +
+b10 1
+b10 !
+b10 /
+b100 ,
+b11 #
+b11 .
+b11 0
+b11 *
+b11 7
+b10 %
+b10 )
+b10 6
+1'
+#190
+0'
+#195
+b111 +
+b111 1
+b110 !
+b110 /
+b101 ,
+b100 #
+b100 .
+b100 0
+b10 *
+b10 7
+b11 %
+b11 )
+b11 6
+1'
+#200
+0'
+#205
+b110 +
+b110 1
+b111 !
+b111 /
+b110 ,
+b101 #
+b101 .
+b101 0
+b111 *
+b111 7
+b100 %
+b100 )
+b100 6
+1'
+#210
+0'
+#215
+b100 +
+b100 1
+b101 !
+b101 /
+b111 ,
+b110 #
+b110 .
+b110 0
+b110 *
+b110 7
+b101 %
+b101 )
+b101 6
+1'
+#220
+0'
+#225
+b0 +
+b0 1
+b0 !
+b0 /
+b1 ,
+b0 #
+b0 .
+b0 0
+b100 *
+b100 7
+0(
+b110 %
+b110 )
+b110 6
+1'
+#230
+0'
+#235
+b1 +
+b1 1
+b1 !
+b1 /
+b10 ,
+b1 #
+b1 .
+b1 0
+1(
+1'
+#240
+0'
+#245
+b11 +
+b11 1
+b11 !
+b11 /
+b11 ,
+b10 #
+b10 .
+b10 0
+1'
+#250
+0'
+#255
+b10 +
+b10 1
+b10 !
+b10 /
+b100 ,
+b11 #
+b11 .
+b11 0
+1'
+#260
+0'
+#265
+b111 +
+b111 1
+b110 !
+b110 /
+b101 ,
+b100 #
+b100 .
+b100 0
+1'
+#270
+0'
+#275
+b110 +
+b110 1
+b111 !
+b111 /
+b110 ,
+b101 #
+b101 .
+b101 0
+1'
+#280
+0'
+#285
+b100 +
+b100 1
+b101 !
+b101 /
+b111 ,
+b110 #
+b110 .
+b110 0
+1'
+#290
+0'
+#295
+b101 +
+b101 1
+b100 !
+b100 /
+b1000 ,
+b111 #
+b111 .
+b111 0
+1'
+#300
+0'
+#305
+b1111 +
+b1111 1
+b1100 !
+b1100 /
+b1001 ,
+b1000 #
+b1000 .
+b1000 0
+1'
+#310
+0'
+#315
+b1110 +
+b1110 1
+b1101 !
+b1101 /
+b1010 ,
+b1001 #
+b1001 .
+b1001 0
+1'
+#320
+0'
+#325
+b1100 +
+b1100 1
+b1111 !
+b1111 /
+b1011 ,
+b1010 #
+b1010 .
+b1010 0
+1'
+#330
+0'
+#335
+b1101 +
+b1101 1
+b1110 !
+b1110 /
+b1100 ,
+b1011 #
+b1011 .
+b1011 0
+1'
+#340
+0'
+#345
+b1000 +
+b1000 1
+b1010 !
+b1010 /
+b1101 ,
+b1100 #
+b1100 .
+b1100 0
+1'
+#350
+0'
+#355
+b1001 +
+b1001 1
+b1011 !
+b1011 /
+b1101 ,
+b1101 #
+b1101 .
+b1101 0
+1"
+1'
+#360
+0'
+#365
+0"
+0&
+1'
+#370
+0'
+#375
+b1110 ,
+1&
+1'
+#380
+0'
+#385
+b1011 +
+b1011 1
+b1001 !
+b1001 /
+b1111 ,
+b1110 #
+b1110 .
+b1110 0
+1'
+#390
+0'
+#395
+b1010 +
+b1010 1
+b1000 !
+b1000 /
+b0 ,
+b1111 #
+b1111 .
+b1111 0
+1'
+#400
+0'
+#405
+b0 +
+b0 1
+b0 !
+b0 /
+b1 ,
+b0 #
+b0 .
+b0 0
+1'
+#410
+0'
+#415
+b1 +
+b1 1
+b1 !
+b1 /
+b10 ,
+b1 #
+b1 .
+b1 0
+1'
+#420
+0'
+#425
+b11 +
+b11 1
+b11 !
+b11 /
+b11 ,
+b10 #
+b10 .
+b10 0
+1'
+#430
+0'
+#435
+b10 +
+b10 1
+b10 !
+b10 /
+b100 ,
+b11 #
+b11 .
+b11 0
+1'
+#440
+0'
+#445
+b111 +
+b111 1
+b110 !
+b110 /
+b101 ,
+b100 #
+b100 .
+b100 0
+1'

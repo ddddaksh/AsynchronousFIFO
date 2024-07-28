@@ -1,0 +1,29 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001b2f23c6350 .scope module, "b2gconverter" "b2gconverter" 2 1;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 4 "data_out";
+    .port_info 1 /INPUT 4 "data_in";
+P_000001b2f22e4de0 .param/l "width" 0 2 1, +C4<00000000000000000000000000000100>;
+o000001b2f22e6b48 .functor BUFZ 4, C4<zzzz>; HiZ drive
+L_000001b2f23c6940 .functor XOR 4, o000001b2f22e6b48, L_000001b2f23cd6e0, C4<0000>, C4<0000>;
+v000001b2f23c6d90_0 .net *"_ivl_0", 3 0, L_000001b2f23cd6e0;  1 drivers
+v000001b2f23c64e0_0 .net *"_ivl_2", 2 0, L_000001b2f23c6760;  1 drivers
+L_000001b2f232bf28 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v000001b2f23c6580_0 .net *"_ivl_4", 0 0, L_000001b2f232bf28;  1 drivers
+v000001b2f23c6620_0 .net "data_in", 3 0, o000001b2f22e6b48;  0 drivers
+v000001b2f23c66c0_0 .net "data_out", 3 0, L_000001b2f23c6940;  1 drivers
+L_000001b2f23c6760 .part o000001b2f22e6b48, 1, 3;
+L_000001b2f23cd6e0 .concat [ 3 1 0 0], L_000001b2f23c6760, L_000001b2f232bf28;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "b2gconverter.v";
