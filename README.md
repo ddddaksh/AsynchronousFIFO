@@ -16,7 +16,7 @@ Indivual testbenches for each Submodule </br>
 Implementation of a circular Asynchronous FIFO Buffer has been made according to the block diagram given above</br>
 Wrap around condition is checked using an additional bit </br>
 Clock Domains have been synchronised using Two Flop Synchronisers </br>
-Conversions from Binary Code to Gray COde and vice versa have been implemented wherever necessary</br>
+Conversions from Binary Code to Gray Code and vice versa have been implemented wherever necessary</br>
 
 **Requirements:** </br>
 Icarus Verilog </br>
